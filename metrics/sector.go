@@ -4,6 +4,16 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 )
 
+const (
+	TaskType_AddPiece   = "Add_Piece"
+	TaskType_Precommit1 = "Precommit1"
+	TaskType_Fetch      = "Fetch"
+	TaskType_Precommit2 = "Precommit2"
+	TaskType_Commit1    = "Commit1"
+	TaskType_Commit2    = "Commit2"
+	TaskType_Finalize   = "Finalize"
+)
+
 var (
 	// TasksInQueue current number of tasks in the queue
 	TasksInQueue = prometheus.NewGaugeVec(
