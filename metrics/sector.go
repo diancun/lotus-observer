@@ -5,20 +5,24 @@ import (
 )
 
 const (
-	TaskType_AddPiece         = "Add_Piece"
-	TaskType_PreCommit1       = "PreCommit1"
-	TaskType_PreCommit1_Queue = "PreCommit1_Queue"
-	TaskType_Fetch            = "Fetch"
-	TaskType_PreCommit2_Queue = "PreCommit2_Queue"
-	TaskType_PreCommit2       = "PreCommit2"
-	TaskType_Commit1_Queue    = "Commit1_Queue"
-	TaskType_Commit1          = "Commit1"
-	TaskType_Commit2_Queue    = "Commit2_Queue"
-	TaskType_Commit2          = "Commit2"
-	TaskType_Finalize_Queue   = "Finalize_Queue"
-	TaskType_Finalize         = "Finalize"
-	TaskType_ReadUnsealed     = "Read_Unsealed"
-	TaskType_Unseal           = "Unseal"
+	TaskType_AddPiece           = "Add_Piece"
+	TaskType_AddPiece_Queue     = "Add_Piece_Queue"
+	TaskType_PreCommit1         = "PreCommit1"
+	TaskType_PreCommit1_Queue   = "PreCommit1_Queue"
+	TaskType_Fetch_Queue        = "Fetch_Queue"
+	TaskType_Fetch              = "Fetch"
+	TaskType_PreCommit2_Queue   = "PreCommit2_Queue"
+	TaskType_PreCommit2         = "PreCommit2"
+	TaskType_Commit1_Queue      = "Commit1_Queue"
+	TaskType_Commit1            = "Commit1"
+	TaskType_Commit2_Queue      = "Commit2_Queue"
+	TaskType_Commit2            = "Commit2"
+	TaskType_Finalize_Queue     = "Finalize_Queue"
+	TaskType_Finalize           = "Finalize"
+	TaskType_ReadUnsealed_Queue = "Read_Unsealed_Queue"
+	TaskType_ReadUnsealed       = "Read_Unsealed"
+	TaskType_Unseal_Queue       = "Unseal_Queue"
+	TaskType_Unseal             = "Unseal"
 )
 
 var (
