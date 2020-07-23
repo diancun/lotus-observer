@@ -5,13 +5,19 @@ import (
 )
 
 const (
-	TaskType_AddPiece   = "Add_Piece"
-	TaskType_Precommit1 = "Precommit1"
-	TaskType_Fetch      = "Fetch"
-	TaskType_Precommit2 = "Precommit2"
-	TaskType_Commit1    = "Commit1"
-	TaskType_Commit2    = "Commit2"
-	TaskType_Finalize   = "Finalize"
+	TaskType_AddPiece         = "Add_Piece"
+	TaskType_PreCommit1       = "PreCommit1"
+	TaskType_PreCommit1_Queue = "PreCommit1_Queue"
+	TaskType_Fetch            = "Fetch"
+	TaskType_PreCommit2_Queue = "PreCommit2_Queue"
+	TaskType_PreCommit2       = "PreCommit2"
+	TaskType_Commit1_Queue    = "Commit1_Queue"
+	TaskType_Commit1          = "Commit1"
+	TaskType_Commit2_Queue    = "Commit2_Queue"
+	TaskType_Commit2          = "Commit2"
+	TaskType_Finalize         = "Finalize"
+	TaskType_ReadUnsealed     = "Read_Unsealed"
+	TaskType_Unseal           = "Unseal"
 )
 
 var (
