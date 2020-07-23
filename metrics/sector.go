@@ -15,6 +15,7 @@ const (
 	TaskType_Commit1          = "Commit1"
 	TaskType_Commit2_Queue    = "Commit2_Queue"
 	TaskType_Commit2          = "Commit2"
+	TaskType_Finalize_Queue   = "Finalize_Queue"
 	TaskType_Finalize         = "Finalize"
 	TaskType_ReadUnsealed     = "Read_Unsealed"
 	TaskType_Unseal           = "Unseal"
