@@ -27,14 +27,35 @@ var (
 			Name: "tasks_in_queue",
 			Help: "Current number of tasks in the queue",
 		},
+		[]string{"miner", "sector_id", "task_type"},
+	)
+
+	// TasksInQueueHistogram tasks in queue distribution
+	TasksInQueueHistogram = prometheus.NewHistogramVec(
+		prometheus.HistogramOpts{
+			Name:    "tasks_in_queue_seconds",
+			Help:    "Tasks in queue distribution",
+			Buckets: []float64{60, 600, 1200, 1800, 3600},
+		},
+		[]string{"miner", "sector_id", "task_type"},
+	)
+)
+
+var (
+	// TasksInProgress current number of tasks in progress
+	TasksInProgress = prometheus.NewGaugeVec(
+		prometheus.GaugeOpts{
+			Name: "tasks_in_progress",
+			Help: "Current number of tasks in progress",
+		},
 		[]string{"miner", "sector_id", "task_type", "worker"},
 	)
 
-	// TasksDurationHistogram Tasks duration distribution
-	TasksDurationHistogram = prometheus.NewHistogramVec(
+	// TasksInProgressHistogram tasks in progress distribution
+	TasksInProgressHistogram = prometheus.NewHistogramVec(
 		prometheus.HistogramOpts{
-			Name:    "tasks_duration_seconds",
-			Help:    "Tasks duration distribution",
+			Name:    "tasks_in_progress_seconds",
+			Help:    "Tasks in progress distribution",
 			Buckets: []float64{60, 600, 1200, 1800, 3600, 7200},
 		},
 		[]string{"miner", "sector_id", "task_type", "worker", "code"},
